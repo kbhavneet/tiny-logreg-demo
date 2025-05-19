@@ -24,3 +24,13 @@ for epoch in range(10):
     model.partial_fit(X, y, classes=np.array([0, 1]))
     acc = model.score(X, y)
     accuracies.append(acc)
+
+plt.plot(range(1, 11), accuracies, marker="o")
+plt.xlabel("epoch")
+plt.ylabel("training accuracy")
+plt.title("model improves with each epoch")
+plt.ylim(0, 1)
+plt.grid(True)
+# plt.show()
+plt.savefig("learning_curve.png", dpi=300, bbox_inches="tight")
+print("saved as learning_curve.png – open it to see the curve")
