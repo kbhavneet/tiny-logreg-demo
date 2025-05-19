@@ -1,4 +1,4 @@
-# Tiny Logistic-Regression Demo 📈🤖
+# Tiny Logistic-Regression Demo📈🤖
 
 A **five-minute, first-principles exercise** that demystifies model training:
 
@@ -12,7 +12,7 @@ The aim is to _see_ the model adjust its weights and minimise errors - no magic,
 
 ---
 
-## 1 · Quick start
+## Quick start
 
 ```bash
 # clone the repo you just pushed
@@ -27,4 +27,20 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # run it
-python tiny_logreg.py
+python train_simple_model.py
+```
+---
+
+## 🔄 Re‑using this template
+
+Swap in any **2‑D** dataset and watch the loop adapt.
+
+* **XOR‑style spiral** data to make linear models struggle.
+* **Two‑moons** or **concentric circles** via `sklearn.datasets.make_moons` / `make_circles`.
+* Inject **Gaussian noise** to see accuracy fluctuate.
+
+The structure of `train_simple_model.py` stays identical – only the `X`, `y` creation block changes.
+
+---
+
+
